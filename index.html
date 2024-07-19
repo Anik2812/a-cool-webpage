@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Ecosystem</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="ecosystem"></canvas>
+    <div id="emotion-panel">
+        <button class="emotion" data-emotion="joy">😄</button>
+        <button class="emotion" data-emotion="sadness">😢</button>
+        <button class="emotion" data-emotion="anger">😠</button>
+        <button class="emotion" data-emotion="fear">😨</button>
+        <button class="emotion" data-emotion="love">❤️</button>
+    </div>
+    <div id="info-panel">
+        <p>Move your cursor to nurture the ecosystem. Click to spawn new lifeforms.</p>
+        <p>Current emotion: <span id="current-emotion">None</span></p>
+        <p>Lifeforms: <span id="lifeform-count">0</span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
