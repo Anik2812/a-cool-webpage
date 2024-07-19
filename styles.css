@@ -3,7 +3,7 @@ body, html {
     padding: 0;
     height: 100%;
     overflow: hidden;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #000;
     color: #fff;
 }
@@ -20,23 +20,26 @@ body, html {
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 10px;
+    gap: 15px;
+    z-index: 10;
 }
 
 .emotion {
-    font-size: 24px;
+    font-size: 30px;
     background: none;
-    border: 2px solid #fff;
+    border: 3px solid #fff;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
     transition: all 0.3s ease;
+    opacity: 0.7;
 }
 
 .emotion:hover, .emotion.active {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px #fff;
+    transform: scale(1.2);
+    box-shadow: 0 0 20px #fff;
+    opacity: 1;
 }
 
 #info-panel {
@@ -44,6 +47,49 @@ body, html {
     top: 20px;
     left: 20px;
     background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    z-index: 10;
+}
+
+#event-log {
+    position: fixed;
+    bottom: 100px;
+    left: 20px;
+    max-width: 300px;
+    background: rgba(0, 0, 0, 0.7);
     padding: 10px;
     border-radius: 5px;
+    font-size: 14px;
+    z-index: 10;
+}
+
+.event-message {
+    margin-bottom: 5px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.event-message.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#particle-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.particle {
+    position: absolute;
+    background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 70%);
+    border-radius: 50%;
+    pointer-events: none;
 }

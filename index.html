@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emotion Ecosystem</title>
+    <title>Emotion Ecosystem: Evolving Sentiments</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,10 +16,13 @@
         <button class="emotion" data-emotion="love">❤️</button>
     </div>
     <div id="info-panel">
-        <p>Move your cursor to nurture the ecosystem. Click to spawn new lifeforms.</p>
-        <p>Current emotion: <span id="current-emotion">None</span></p>
+        <p>Dominant Emotion: <span id="dominant-emotion">None</span></p>
+        <p>Ecosystem Health: <span id="ecosystem-health">100%</span></p>
         <p>Lifeforms: <span id="lifeform-count">0</span></p>
     </div>
+    <div id="event-log"></div>
+    <div id="particle-container"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
