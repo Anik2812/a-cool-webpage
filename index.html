@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emotion Ecosystem: Evolving Sentiments</title>
+    <title>Emotional Biome: Evolution of Feelings</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <canvas id="ecosystem"></canvas>
+    <canvas id="biome"></canvas>
     <div id="emotion-panel">
         <button class="emotion" data-emotion="joy">😄</button>
         <button class="emotion" data-emotion="sadness">😢</button>
@@ -16,12 +16,17 @@
         <button class="emotion" data-emotion="love">❤️</button>
     </div>
     <div id="info-panel">
+        <h2>Emotional Biome</h2>
+        <p>Balance: <span id="balance-meter"></span></p>
         <p>Dominant Emotion: <span id="dominant-emotion">None</span></p>
-        <p>Ecosystem Health: <span id="ecosystem-health">100%</span></p>
-        <p>Lifeforms: <span id="lifeform-count">0</span></p>
+        <p>Entities: <span id="entity-count">0</span></p>
+        <p>Evolution Stage: <span id="evolution-stage">1</span></p>
     </div>
-    <div id="event-log"></div>
-    <div id="particle-container"></div>
+    <div id="goal-panel">
+        <h3>Current Goal</h3>
+        <p id="current-goal">Create a balanced ecosystem</p>
+    </div>
+    <div id="achievement-popup"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="script.js"></script>
 </body>
